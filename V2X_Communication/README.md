@@ -10,7 +10,9 @@ Unzip and install in Linux using
 
 ## Frameworks
 Download Inet4.5.4 from https://inet.omnetpp.org/Download.html
-Download Veins5.3 from https://veins.car2x.org/download/
+
+Download Veins5.3 from https://veins.car2x.org/download
+
 Download Simu5G 1.2.2 from https://simu5g.org/install
 
 ## SUMO
