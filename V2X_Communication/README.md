@@ -1,7 +1,9 @@
 # Download required Applications
+
 ## Omnet++
 Download OMNeT++ 6.1.0 from https://omnetpp.org/download/
 Unzip and install in Linux using 
+
 ```./install.sh
 ```
 
@@ -16,7 +18,7 @@ sudo apt-get update
 sudo apt-get install sumo sumo-tools sumo-doc
 ```
 
-#Setup in Linux 24.04
+# Setup in Linux 24.04
 Run Omnet++ and import all the frameworks in Omnet++ and build all the projects.
 
 # Clone repository
