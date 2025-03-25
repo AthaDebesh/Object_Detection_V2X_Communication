@@ -4,16 +4,18 @@
 Download OMNeT++ 6.1.0 from https://omnetpp.org/download/
 Unzip and install in Linux using 
 
-```./install.sh
+```
+./install.sh
 ```
 
-## Frameowrks
+## Frameworks
 Download Inet4.5.4 from https://inet.omnetpp.org/Download.html
 Download Veins5.3 from https://veins.car2x.org/download/
 Download Simu5G 1.2.2 from https://simu5g.org/install
 
 ## SUMO
-```sudo add-apt-repository ppa:sumo/stable
+```
+sudo add-apt-repository ppa:sumo/stable
 sudo apt-get update
 sudo apt-get install sumo sumo-tools sumo-doc
 ```
