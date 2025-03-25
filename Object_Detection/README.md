@@ -1,2 +1,8 @@
-# Object_Detection_V2X_Communication
-A framework that has the capability to detect objects and extract features from image taken from camera and it's corresponding point cloud data from LIDAR that can communicate to RSU, and vehicles via LTE and DSRC communication.
+#Create Virtual Environment with myenv
+python3 -m venv myenv
+
+#Activate environment
+source myenv/bin/activate
+
+#Install required packages
+pip install ultralytics opencv-python matplotlib fastapi uvicorn numpy pillow
