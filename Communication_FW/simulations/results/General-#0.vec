@@ -1,0 +1,230 @@
+version 3
+run General-0-20250530-12:13:10-16384
+attr configname General
+attr datetime 20250530-12:13:10
+attr datetimef 20250530-121310
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Manhattan
+attr processid 16384
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../Frameworks/inet-4.5.4-src/inet4.5/images:../../Frameworks/veins-5.3.1/veins-veins-5.3.1/images
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level info
+config network Manhattan
+config debug-on-errors true
+config print-undisposed true
+config sim-time-limit 100s
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500m
+config *.playgroundSizeY 2500m
+config *.playgroundSizeZ 50m
+config *.annotations.draw true
+config *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+config *.manager.updateInterval 1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"manhattan.launchd.xml\")"
+config *.rsu[0].mobility.z 3
+config *.rsu[0].mobility.x 145
+config *.rsu[0].mobility.y 145
+config *.rsu[*].applType "\"myRSU\""
+config *.rsu[*].appl.headerLength "80 bit"
+config *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].applType "\"myVehicle\""
+config *.node[*].appl.headerLength "80 bit"
+config *.node[*].appl.beaconInterval 1s
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].veinsmobility.setHostSpeed false
+
+vector 0 Manhattan.rsu[0].nic.phy80211p RadioState ETV
+vector 1 Manhattan.rsu[0].nic.phy80211p RadioChannel ETV
+vector 2 Manhattan.node[0].nic.phy80211p RadioState ETV
+vector 3 Manhattan.node[0].nic.phy80211p RadioChannel ETV
+vector 4 Manhattan.manager posx ETV
+vector 5 Manhattan.manager posy ETV
+vector 6 Manhattan.node[1].nic.phy80211p RadioState ETV
+vector 7 Manhattan.node[1].nic.phy80211p RadioChannel ETV
+vector 8 Manhattan.manager posx ETV
+vector 9 Manhattan.manager posy ETV
+vector 10 Manhattan.manager speed ETV
+vector 11 Manhattan.manager acceleration ETV
+vector 12 Manhattan.manager co2emission ETV
+vector 13 Manhattan.manager speed ETV
+vector 14 Manhattan.manager acceleration ETV
+vector 15 Manhattan.manager co2emission ETV
+4	20	1	43.4
+4	65	2	43.4
+4	190	3	43.4
+4	332	4	43.4
+4	474	5	43.4
+4	616	6	43.4
+4	758	7	43.4
+4	900	8	43.4
+4	1042	9	43.4
+4	1184	10	43.4
+4	1326	11	43.4
+4	1480	12	43.4
+4	1635	13	43.4
+4	1791	14	44.253781910921
+4	1964	15	49.188553988218
+4	2139	16	58.647499068777
+5	20	1	30.1
+5	65	2	31.5
+5	190	3	34.789044094342
+5	332	4	40.670721404278
+5	474	5	48.115129991667
+5	616	6	57.106571178208
+5	758	7	67.631489918381
+5	900	8	80.088282317249
+5	1042	9	93.946613246296
+5	1184	10	108.44690568134
+5	1326	11	119.70746009536
+5	1480	12	126.62167405767
+5	1635	13	130.73416990644
+5	1791	14	137.37647337645
+5	1964	15	143.99313239293
+5	2139	16	149.8
+8	65	2	153
+8	190	3	153
+8	332	4	153
+8	474	5	153
+8	616	6	153
+8	758	7	153
+8	900	8	153
+8	1042	9	153
+8	1184	10	153
+8	1326	11	153
+8	1480	12	153
+8	1635	13	153
+8	1791	14	153
+8	1964	15	153
+8	2139	16	153
+9	65	2	326.3
+9	190	3	324.24623785994
+9	332	4	319.84458904134
+9	474	5	313.31515156936
+9	616	6	304.18898579492
+9	758	7	292.70315971193
+9	900	8	279.90629333134
+9	1042	9	269.01162976522
+9	1184	10	261.91347924077
+9	1326	11	252.22651580395
+9	1480	12	240.6596756953
+9	1635	13	227.12466886514
+9	1791	14	213.12918623855
+9	1964	15	198.80751694446
+9	2139	16	184.27894504075
+10	65	2	1.4
+10	190	3	3.2890440943418
+10	332	4	5.8816773099359
+10	474	5	7.4444085873896
+10	616	6	8.9914411865408
+10	758	7	10.524918740173
+10	900	8	12.456792398868
+10	1042	9	13.858330929046
+10	1184	10	14.500292435048
+10	1326	11	11.26055441402
+10	1480	12	6.9142139623046
+10	1635	13	4.1124958487745
+10	1791	14	6.7020348153129
+10	1964	15	8.5374647815997
+10	2139	16	9.9838295654213
+11	190	3	1.8890440943418
+11	332	4	2.5926332155941
+11	474	5	1.5627312774537
+11	616	6	1.5470325991511
+11	758	7	1.5334775536321
+11	900	8	1.9318736586953
+11	1042	9	1.4015385301784
+11	1184	10	0.641961506002
+11	1326	11	-3.2397380210284
+11	1480	12	-4.3463404517155
+11	1635	13	-2.8017181135301
+11	1791	14	2.5895389665384
+11	1964	15	1.8354299662868
+11	2139	16	1.4463647838216
+12	190	3	2.7693193381643
+12	332	4	5.0875452841625
+12	474	5	4.3109304510352
+12	616	6	4.963222063758
+12	758	7	5.6150994850339
+12	900	8	7.6891313585571
+12	1042	9	6.7053351745197
+12	1184	10	4.3345194361961
+12	1326	11	0.973
+12	1480	12	0.973
+12	1635	13	0.973
+12	1791	14	5.6437140852714
+12	1964	15	5.3557833597336
+12	2139	16	5.1636539378755
+13	190	3	2.0537621400552
+13	332	4	4.4016488186084
+13	474	5	6.5294374719728
+13	616	6	9.1261657744413
+13	758	7	11.485826082993
+13	900	8	12.796866380586
+13	1042	9	10.894663566118
+13	1184	10	7.0981505244508
+13	1326	11	9.6869634368227
+13	1480	12	11.566840108647
+13	1635	13	13.535006830166
+13	1791	14	13.995482626587
+13	1964	15	14.321669294086
+13	2139	16	14.528571903712
+14	332	4	2.3478866785532
+14	474	5	2.1277886533644
+14	616	6	2.5967283024685
+14	758	7	2.359660308552
+14	900	8	1.311040297593
+14	1042	9	-1.9022028144679
+14	1184	10	-3.7965130416676
+14	1326	11	2.5888129123719
+14	1480	12	1.8798766718246
+14	1635	13	1.9681667215191
+14	1791	14	0.46047579642021
+14	1964	15	0.32618666749913
+14	2139	16	0.20690260962583
+15	332	4	3.8208455939494
+15	474	5	4.7989722357191
+15	616	6	7.331722189765
+15	758	7	8.3357922750778
+15	900	8	5.9642181460411
+15	1042	9	0.973
+15	1184	10	0.973
+15	1326	11	7.7050057262537
+15	1480	12	7.051305266121
+15	1635	13	8.4120232900867
+15	1791	14	3.5915284526868
+15	1964	15	3.1980827480311
+15	2139	16	2.8186008466891
+

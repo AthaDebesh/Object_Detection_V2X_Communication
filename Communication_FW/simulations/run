@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/comm_fw -n .:../src $*
+# for shared lib, use: opp_run -l ../src/comm_fw -n .:../src $*

@@ -1,0 +1,96 @@
+file 6575 1748937957                                            
+version 3
+run General-0-20250530-12:13:10-16384
+attr configname General
+attr datetime 20250530-12:13:10
+attr datetimef 20250530-121310
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Manhattan
+attr processid 16384
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../Frameworks/inet-4.5.4-src/inet4.5/images:../../Frameworks/veins-5.3.1/veins-veins-5.3.1/images
+config cmdenv-express-mode true
+config cmdenv-autoflush true
+config cmdenv-status-frequency 1s
+config **.cmdenv-log-level info
+config network Manhattan
+config debug-on-errors true
+config print-undisposed true
+config sim-time-limit 100s
+config **.scalar-recording true
+config **.vector-recording true
+config *.playgroundSizeX 2500m
+config *.playgroundSizeY 2500m
+config *.playgroundSizeZ 50m
+config *.annotations.draw true
+config *.obstacles.obstacles "xmldoc(\"config.xml\", \"//AnalogueModel[@type='SimpleObstacleShadowing']/obstacles\")"
+config *.manager.updateInterval 1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"manhattan.launchd.xml\")"
+config *.rsu[0].mobility.z 3
+config *.rsu[0].mobility.x 145
+config *.rsu[0].mobility.y 145
+config *.rsu[*].applType "\"myRSU\""
+config *.rsu[*].appl.headerLength "80 bit"
+config *.rsu[*].nic.phy80211p.antennaOffsetZ "0 m"
+config *.connectionManager.sendDirect true
+config *.connectionManager.maxInterfDist 2600m
+config *.connectionManager.drawMaxIntfDist false
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.mac1609_4.bitrate 6Mbps
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\")"
+config *.**.nic.phy80211p.usePropagationDelay true
+config *.**.nic.phy80211p.antenna "xmldoc(\"antenna.xml\", \"/root/Antenna[@id='monopole']\")"
+config *.node[*].nic.phy80211p.antennaOffsetY "0 m"
+config *.node[*].nic.phy80211p.antennaOffsetZ "1.895 m"
+config *.node[*].applType "\"myVehicle\""
+config *.node[*].appl.headerLength "80 bit"
+config *.node[*].appl.beaconInterval 1s
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].veinsmobility.setHostSpeed false
+
+vector 0 Manhattan.rsu[0].nic.phy80211p RadioState ETV
+vector 1 Manhattan.rsu[0].nic.phy80211p RadioChannel ETV
+vector 2 Manhattan.node[0].nic.phy80211p RadioState ETV
+vector 3 Manhattan.node[0].nic.phy80211p RadioChannel ETV
+vector 4 Manhattan.manager posx ETV
+vector 5 Manhattan.manager posy ETV
+vector 6 Manhattan.node[1].nic.phy80211p RadioState ETV
+vector 7 Manhattan.node[1].nic.phy80211p RadioChannel ETV
+vector 8 Manhattan.manager posx ETV
+vector 9 Manhattan.manager posy ETV
+vector 10 Manhattan.manager speed ETV
+vector 11 Manhattan.manager acceleration ETV
+vector 12 Manhattan.manager co2emission ETV
+vector 13 Manhattan.manager speed ETV
+vector 14 Manhattan.manager acceleration ETV
+vector 15 Manhattan.manager co2emission ETV
+4	3295 254 20 2139 1 16 16 43.4 58.647499068777 716.28983496792 32303.720203893
+5	3549 365 20 2139 1 16 16 30.1 149.8 1400.6276676606 151414.42539826
+8	3914 194 65 2139 2 16 15 153 153 2295 351135
+9	4108 363 65 2139 2 16 15 184.27894504075 326.3 4007.656034903 1101621.9158891
+10	4471 376 65 2139 2 16 15 1.4 14.500292435048 125.85749906878 1260.8960719443
+11	4847 367 190 2139 3 16 14 -4.3463404517155 2.5926332155941 8.5838295654213 72.988476019796
+12	5214 334 190 2139 3 16 14 0.973 7.6891313585571 60.557253974307 321.21103610719
+13	5548 365 190 2139 3 16 14 2.0537621400552 14.528571903712 142.02105495925 1637.1629392509
+14	5913 343 332 2139 4 16 13 -3.7965130416676 2.5967283024685 12.474809763656 56.572577773387
+15	6256 318 332 2139 4 16 13 0.973 8.4120232900867 64.974096770421 409.25541043997
+

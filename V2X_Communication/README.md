@@ -25,5 +25,7 @@ sudo apt-get install sumo sumo-tools sumo-doc
 # Setup in Linux 24.04
 Run Omnet++ and import all the frameworks in Omnet++ and build all the projects.
 
+Frameworks/veins-5.3.1/veins-veins-5.3.1/sumo-launchd.py -vv -c /usr/bin/sumo-gui
+
 # Clone repository
 
